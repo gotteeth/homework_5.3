@@ -35,11 +35,11 @@ class BudgetCategory:
             raise ValueError("expense amount must be a positive number")
         
     def display_category_summary(self):
-        remaining_buget = self.__allocated_budget - self.__expense
+        remaining_budget = self.__allocated_budget - self.__expense
         print(f"category : {self.__category_name}")
         print(f"allocated budget: ${self.__allocated_budget}")
         print(f"expenses: ${self.__expense}")
-        print(f"remaining budget ${remaining_buget}")
+        print(f"remaining budget ${remaining_budget}")
 
 
 food_category = BudgetCategory("Food", 500)
